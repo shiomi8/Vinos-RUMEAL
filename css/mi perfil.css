@@ -16,6 +16,7 @@ img{
     width: 100%;
     min-height: 10%;
     background-image: url("../img/fondo.png");
+    object-fit: cover;
 }
 .bg-container{
     background-color: rgba(187, 22, 39, 0.65);
@@ -67,29 +68,30 @@ img{
     width: 5em;
 }
 .opciones{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     justify-content: space-evenly;
 }
 .opciones img{
     padding: 15px;
     width: 5em;
-    align-items: center;
-    justify-content: space-evenly;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
 }
-.list-cuanta{
+.list-cuenta{
     display: block;
-    background-color: rgb(15, 218, 233);
+    background-color: rgb(255, 255, 255);
     position: fixed;
     right: 0px;
-    text-align: center;
     height: 100vh;
     width: 100%;
     transform: translateX(100%);
     transition: all 0.5s;
 }
-.list-cuenta li{
-    list-style: none;
-    margin-top: 2em;
+.list-cuenta h3{
+    font-size: 50px;
 }
 .active-cambiar{
     transform: translateX(0%);
@@ -120,4 +122,30 @@ img{
 }
 .active-menu{
     transform: translateX(0%);
+}
+.contenido{
+    align-items: center;
+    margin-top: 30px;
+    padding: 60px;
+    background-color: white;
+}
+.contenido img{
+    margin-right: 20px;
+    width: 70px;
+}
+.contenido p{
+    font-size: 35px;
+}
+.usuario{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+}
+.bienvendo{
+    padding: 40px;
+    background-color: white;
+}
+.bienvendo h3{
+    font-size: 35px;
 }
